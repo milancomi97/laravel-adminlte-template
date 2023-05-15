@@ -30,7 +30,7 @@ Route::middleware('auth')->group(function () {
 
 
 Route::get('/templatetheme', function () {
-    return view('templatetheme');
+    return view('/adminlte/welcome');
 });
 
 
