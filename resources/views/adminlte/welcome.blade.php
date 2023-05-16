@@ -15,7 +15,6 @@
 
     <!-- Main content -->
     <div class="content">
-
     </div>
     <!-- /.content -->
 </div>
@@ -24,7 +23,7 @@
 
 
 @section('custom-scripts')
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('admin_assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 
 @endsection
 
