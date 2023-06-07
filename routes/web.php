@@ -33,5 +33,8 @@ Route::get('/templatetheme', function () {
     return view('/adminlte/welcome');
 });
 
+Route::get('/osnovnipodaci/partneri', function () {
+    return view('/osnovnipodaci/partneri');
+});
 
 require __DIR__.'/auth.php';

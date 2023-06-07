@@ -72,6 +72,14 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
+                            Magacinsko poslovanje
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
                             Tehnologija
                         </p>
                     </a>
@@ -88,7 +96,43 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            OSA - Osnovna sredstva
+                            Proizvodnja
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Osnovna sredstva
+                        </p>
+                    </a>
+                </li>
+
+
+
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Osnovni podaci
+                        </p>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Kadrovska evidencija
                         </p>
                     </a>
                 </li>
@@ -128,7 +172,7 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p style="font-size: 0.6rem">
-                            FIP - Finansijsko pogonsko knjigovostvo
+                            Finansijsko knjigovodstvo
                         </p>
                     </a>
                 </li>
@@ -136,11 +180,18 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p style="font-size: 0.78rem">
-                            MK - Materijalno knjigovodstvo
+                            Materijalno knjigovodstvo
                         </p>
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p style="font-size: 0.78rem">
+                            Pogonsko knjigovodstvo
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
