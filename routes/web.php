@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('/adminlte/welcome');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -33,8 +33,6 @@ Route::get('/templatetheme', function () {
     return view('/adminlte/welcome');
 });
 
-Route::get('/osnovnipodaci/partneri', function () {
-    return view('/osnovnipodaci/partneri');
-});
+Route::resource("/partner", \App\Http\Controllers\PartnerController::class);
 
 require __DIR__.'/auth.php';

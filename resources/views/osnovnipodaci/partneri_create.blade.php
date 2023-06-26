@@ -17,21 +17,21 @@
         <div class="content pl-5 pr-5 ">
             <div class="container pl-5 pr-5 border">
 
-            <h2 class="pb-5 pt-2 text-center">Partneri</h2>
+                <h2 class="pb-5 pt-2 text-center">Partneri</h2>
                 <form>
-
                     <!--Row 1-->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input1">Naziv</label>
-                                <input type="text" class="form-control" id="input1" placeholder="">
+                                <label for="name">Naziv</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input2">Skraceni naziv</label>
-                                <input type="text" class="form-control" id="input2" placeholder="">
+                                <label for="short_name">Skraceni naziv</label>
+                                <input type="text" class="form-control" name="short_name" id="short_name"
+                                       placeholder="">
                             </div>
                         </div>
                     </div>
@@ -41,14 +41,15 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input1">Adrese</label>
-                                <input type="text" class="form-control" id="input1" placeholder="">
+                                <label for="adress">Adrese</label>
+                                <input type="text" class="form-control" name="adress" id="adress" placeholder="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input2">Kontakt osoba</label>
-                                <input type="text" class="form-control" id="input2" placeholder="">
+                                <label for="contact_employee">Kontakt osoba</label>
+                                <input type="text" class="form-control" name="contact_employee" id="contact_employee"
+                                       placeholder="">
                             </div>
                         </div>
                     </div>
@@ -58,70 +59,71 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input1">Pib</label>
-                                <input type="text" class="form-control" id="input1" placeholder="">
+                                <label for="pib">Pib</label>
+                                <input type="text" class="form-control" id="pib" name="pib" placeholder="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input2">Telefoni</label>
-                                <input type="text" class="form-control" id="input2" placeholder="">
+                                <label for="phone">Telefoni</label>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="">
                             </div>
                         </div>
                     </div>
                     <!--Row 3 End-->
 
 
-
                     <!--Row 4-->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input1">Web adresa</label>
-                                <input type="text" class="form-control" id="input1" placeholder="">
+                                <label for="web_site">Web adresa</label>
+                                <input type="text" class="form-control" name="web_site" id="web_site" placeholder="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input2">Email</label>
-                                <input type="text" class="form-control" id="input2" placeholder="">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="">
                             </div>
                         </div>
                     </div>
                     <!--Row 4 End-->
 
 
-
                     <!--Row 5-->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input1">Sifra delatnosti</label>
-                                <input type="text" class="form-control" id="input1" placeholder="">
+                                <label for="sifra_delatnosti">Sifra delatnosti</label>
+                                <input type="text" class="form-control" name="sifra_delatnosti" id="sifra_delatnosti"
+                                       placeholder="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input2">Odgovorno lice</label>
-                                <input type="text" class="form-control" id="input2" placeholder="">
+                                <label for="odgovorno_lice">Odgovorno lice</label>
+                                <input type="text" class="form-control" name="odgovorno_lice" id="odgovorno_lice"
+                                       placeholder="">
                             </div>
                         </div>
                     </div>
                     <!--Row 5 End-->
 
-
                     <!--Row 6-->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input1">Maticni broj</label>
-                                <input type="text" class="form-control" id="input1" placeholder="">
+                                <label for="maticni_broj">Maticni broj</label>
+                                <input type="text" class="form-control" id="maticni_broj" name="maticni_broj"
+                                       placeholder="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input2">Registarski broj</label>
-                                <input type="text" class="form-control" id="input2" placeholder="">
+                                <label for="registarski_broj">Registarski broj</label>
+                                <input type="text" class="form-control" name="registarski_broj" id="registarski_broj"
+                                       placeholder="">
                             </div>
                         </div>
                     </div>
@@ -133,8 +135,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="select1">Mesto</label>
-                                <select class="form-control" id="select1">
+                                <label for="mesto">Mesto</label>
+                                <select class="form-control" name="mesto" id="mesto">
                                     <option value="">Izaberi grad</option>
                                     <option value="">Svilajnac</option>
                                     <option value="">Smederevska Palanka</option>
@@ -145,9 +147,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="checkbox1">Komitent je u sistemu PDV-a</label>
+                                <label for="pripada_pdvu">Komitent je u sistemu PDV-a</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="checkbox1">
+                                    <input class="form-check-input" type="checkbox" name="pripada_pdvu"
+                                           id="pripada_pdvu">
                                     <label class="form-check-label" for="checkbox1">
                                         Komitent je u sistemu PDV-a
                                     </label>
@@ -187,12 +190,12 @@
 
                     <div class="row pt-5">
                         <div class="col-md-12">
-                                <div class="float-right">
-                                <button type="submit" class="btn btn-primary">Potvrdi</button>
-                                <button type="submit" class="btn btn-danger">Odustani</button>                            </div>
+                            <div class="float-right">
+                                <button type="submit" class="btn btn-primary dodaj_partnera">Potvrdi</button>
+                                <button type="submit" class="btn btn-danger">Odustani</button>
+                            </div>
                         </div>
                     </div>
-
 
                 </form>
 
@@ -206,6 +209,30 @@
 
 
 @section('custom-scripts')
+    <script>
+        $(document).ready(function() {
+            $('.dodaj_partnera').click(function(e) {
+                e.preventDefault(); // Prevent the default form submission
+
+                // Collect the form data
+                var formData = $('form').serialize();
+
+                $.ajax({
+                    url: '{{ route('dodaj.partnera') }}', // Replace with your server URL
+                    type: 'POST', // Use POST method to send data
+                    data: formData,
+                    success: function(response) {
+                        // Handle the success response
+                        console.log(response);
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle the error
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
     <script src="{{asset('admin_assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 
 @endsection
