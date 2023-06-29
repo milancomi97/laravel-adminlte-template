@@ -13,7 +13,23 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        return view('partneri.partneri_show_all');
+        $partners = Partner::all();
+
+        $partnerData = [];
+        foreach ($partners as $partner) {
+            $partnerData[] = [
+                $partner->internal_sifra, // TODO ostaje
+                $partner->name, // TODO ostaje
+                $partner->short_name, // TODO ostaje
+                $partner->pib,// TODO ostaje
+                $partner->active, // TODO ostaje
+                $partner->email, // TODO ostaje
+                $partner->web_site, // TODO ostaje
+                $partner->id
+            ];
+        }
+
+        return view('partneri.partneri_show_all', ['partners' => json_encode($partnerData)]);
     }
 
     /**
@@ -29,7 +45,6 @@ class PartnerController extends Controller
      */
     public function store(Request $request)
     {
-        // TODO Migracija i tabela
         $input = $request->all();
         $partner = Partner::create([
             'adress' => $input['adress'],
@@ -45,11 +60,14 @@ class PartnerController extends Controller
             'registarski_broj' => $input['registarski_broj'],
             'short_name' => $input['short_name'],
             'sifra_delatnosti' => $input['sifra_delatnosti'],
-            'web_site' => $input['web_site']
+            'web_site' => $input['web_site'],
+            'adress' => $input['adress'],
+            'active' => $input['active'] == 'true',
+            'internal_sifra' => $input['internal_sifra']
         ]);
 
 
-        return 'super';
+        return  ;
     }
 
     /**

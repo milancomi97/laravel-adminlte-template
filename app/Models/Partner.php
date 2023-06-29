@@ -22,6 +22,9 @@ class Partner extends Model
         'maticni_broj',
         'registarski_broj',
         'mesto',
-        'pripada_pdvu'
+        'pripada_pdvu',
+        'adress',
+        'active',
+        'internal_sifra'
     ];
 }

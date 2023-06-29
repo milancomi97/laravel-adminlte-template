@@ -25,6 +25,9 @@ return new class extends Migration
             $table->string('maticni_broj');
             $table->string('registarski_broj');
             $table->integer('mesto');
+            $table->string('adress');
+            $table->boolean('active');
+            $table->string('internal_sifra')->unique();
             $table->boolean('pripada_pdvu');
             $table->timestamps();
         });
