@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\UpdatePartnerRequest;
 use App\Models\Partner;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class PartnerController extends Controller
 {
@@ -97,8 +98,19 @@ class PartnerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Partner $partner)
+    public function destroy(Request $request)
     {
-        //
+        $status = Partner::destroy($request->partner_id);
+
+        if($status){
+            return  response()->json([
+                'status' => (bool) $status
+            ], 200);
+        }else{
+            return  response()->json([
+                'status' => (bool) $status
+            ],  404 );
+        }
+
     }
 }
